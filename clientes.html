@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/clientes.css">
+  <title>Tarea 2 - Mantenimiento Clientes</title>
+</head>
+<body>
+  <h1>Mantenimiento Clientes</h1>
+
+  <form>
+    <fieldset>
+      <legend>Datos identificativos</legend>
+      <pre>
+        Nombre:    <input type="text" id="name" placeholder="Nombre"><br>
+        Apellido:  <input type="text" id="last-name" placeholder="Apellido"><br>
+        Dirección: <input type="text" id="address" placeholder="Dirección"><br>
+        Ciudad:    <input type="text" id="city" placeholder="Ciudad"><br><br>
+        Banco:     <input type="text" id="bank" placeholder="Banco"><br>
+        Agencia:   <input type="text" id="agency" placeholder="Agencia"><br>
+        Cuenta:    <input type="text" id="account" placeholder="Cuenta">
+      </pre>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>Tipo de pago</legend>
+      <pre>
+        <input type="radio" name="payment" id="cash" checked> Contado<br>
+        <input type="radio" name="payment" id="credit" onclick="validateBank()"> Crédito<br>
+        <input type="radio" name="payment" id="separated"> Apartado
+      </pre>
+    </fieldset>
+  </form>
+  
+  <form>
+    <fieldset>
+      <legend>Forma de pago</legend>
+      <pre>
+        <input id="day15" type="checkbox" checked> 15 días<br>
+        <input id="day30" type="checkbox"> 30 días<br>
+        <input id="day60" type="checkbox" onclick="validateDays()"> 60 días<br>
+        <input id="day90" type="checkbox" onclick="validateDays()"> 90 días
+      </pre>
+    </fieldset>
+  </form>
+
+  <input type="submit" value="Enviar" onclick="validateForm()">
+  <button id="restart" onclick="clearFields()">Reinicializar</button>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

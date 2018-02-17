@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffcc;
+}
+
+h1 {
+  text-align: center;
+  background-color: #00fff0;
+  color: darkgray;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+legend {
+  color: blue;
+}

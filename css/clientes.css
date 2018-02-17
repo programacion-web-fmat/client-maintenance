@@ -1,0 +1,13 @@
+body {
+  background-color: #ffffcc;
+}
+
+h1 {
+  text-align: center;
+  color: #00cf38;
+  background-color: #008080;
+}
+
+form {
+  margin-bottom: 10px;
+}
